@@ -276,13 +276,16 @@ p {
 
 @media (max-width: 480px) {
     .section-title h2 {
-        font-size: 1.5em; /* Smaller font size for section title on small screens */
+        font-size: 1.8em; /* Smaller font size for section title on small screens */
     }
 
     .project-content h2 {
-        font-size: 1.5em; /* Smaller font size for project title on small screens */
+        font-size: 1.8em; /* Smaller font size for project title on small screens */
     }
 
+    .project-content h3{
+        text-align: none;
+    }
     .project-content p {
         font-size: 1em; /* Smaller font size for project description on small screens */
     }

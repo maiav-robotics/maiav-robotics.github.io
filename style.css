@@ -1,0 +1,260 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', 'Helvetica Neue', 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: white;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo img {
+    margin-left: 20px;
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #9A3BFF;
+    transform: scale(1.1);
+}
+
+main {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.tabs {
+    margin: 50px 0;
+}
+
+.tab-list {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.tab-item {
+    padding: 10px 25px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border-radius: 18px;
+    transition: background-color 0.3s;
+}
+
+.tab-item.active,
+.tab-item:hover {
+    background-color: #9A3BFF;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Adjust the iframe to be responsive */
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+}
+
+.description {
+    margin-top: 20px;
+}
+
+.description h3 {
+    color: #9A3BFF;
+    font-size: 30px;
+}
+
+.description p {
+    font-size: 18px;
+}
+
+p {
+    padding: 2em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .tab-item {
+        padding: 8px 15px;
+        margin: 0 5px;
+    }
+
+    .video-container {
+        width: 100%;
+        height: auto; /* Adjust the height to auto for responsive design */
+    }
+
+
+    .discord-button {
+        padding: 10px 12px;
+        font-size: 0.9em;
+    }
+
+    .description p{
+        margin: 30px;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .tab-item {
+        padding: 6px 10px;
+        margin: 0 3px;
+    }
+
+    .video-container {
+        width: 80%;
+        height: auto; /* Ensure the height adjusts automatically */
+    }
+
+    .discord-button {
+        padding: 8px 10px;
+        font-size: 0.8em;
+    }
+
+    .description p{
+        margin: 30px;
+        text-align: justify;
+    }
+}
+
+/* Footer Section */
+.footer {
+    background-color: #ffffff; /* Black background color */
+    padding: 20px 10px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.footer-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-holder p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.social-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 8px 0;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    margin: 0 10px; /* Adjusted margin for spacing */
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-link img {
+    margin-right: 10px;
+}
+
+.social-link span {
+    font-size: 1.2em;
+}
+
+.highlight {
+    color: #9A3BFF; /* Replace with your desired color */
+}
+
+.social-link:hover span {
+    color: #9A3BFF; /* Purple color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        padding: 10px 10px;
+    }
+
+    .social-link span {
+        font-size: 1em;
+    }
+
+    .social-wrapper {
+        flex-direction:row;
+        align-items: center;
+        margin: 10px;
+    }
+    .social-link img {
+        margin-right: 3px;
+    }
+
+    .social-link {
+        margin: 5px 10px;
+    }
+}

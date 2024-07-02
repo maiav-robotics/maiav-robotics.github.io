@@ -1,0 +1,360 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', 'Helvetica Neue', 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: white;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-type: y proximity; /* Enable scroll snap */
+    text-decoration: none;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+.logo img {
+    margin-left: 20px;
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+nav ul{
+    margin: 0;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s, text-decoration 0.3s;
+}
+
+nav ul a:hover {
+    color: #9A3BFF; /* Purple color on hover */
+    /* transform: scale(1.1); Slight zoom effect */
+    text-decoration: none; /* Underline on hover */
+}
+
+.highlight {
+    color: #9A3BFF; /* Replace with your desired color */
+}
+
+/* Spacing between letters */
+.welcome-text {
+    letter-spacing: 0.06em; /* Adjust the space as needed */
+}
+
+.margin_bt_mainline {
+    margin-bottom: 40px;
+}
+
+/* Join Discord button styles */
+.join-discord {
+    margin-top: 30px;
+}
+
+.discord-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #7289da;
+    color: white;
+    padding: 15px 20px; /* Adjusted padding */
+    text-decoration: none;
+    border-radius: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-size: 1em; /* Adjusted font size */
+}
+
+.discord-button:hover {
+    background-color: #5a6fb5;
+}
+
+.discord-logo {
+    width: 25px;
+    height: 20px;
+    margin-right: 10px; /* Adjusted margin */
+}
+
+/* Home Section */
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    scroll-snap-align: start; /* Snap alignment */
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 5em; /* Adjusted font size */
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 1.3em;
+    margin-top: 0.5em;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px; /* Adjust margin as needed */
+}
+
+.section-title h2 {
+    color: #9A3BFF; /* Purple color */
+    font-size: 2.5em; /* Adjust font size as needed */
+    margin: 0;
+}
+
+/* Project Section */
+#project {
+    background-color: #fff; /* White background color for the section */
+    width: 100%; /* Ensure the section covers the entire width */
+    padding: 40px 20px; /* Adjust padding as needed */
+    position: relative;
+    height: 105vh; /* Full height of the viewport */
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+    scroll-snap-align: start; /* Snap alignment */
+}
+
+.bg {
+    min-height: auto;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-height: auto;
+    max-width: 1100px; /* Max width of the content */
+    background-color: #fff; /* Background color for the content */
+    border-radius: 30px; /* Rounded corners for the content */
+    box-shadow: 2px 2px 100px rgba(53, 53, 53, 0.2); /* Shadow for the content */
+    overflow: hidden;
+    margin: 0 auto; /* Center the container */
+}
+
+/* Project Content */
+.project-content {
+    padding: 30px;
+    flex: 1.1;
+    text-align: justify;
+    margin-left: 10px;
+}
+
+.project-content h3 {
+    font-size: 2.0em;
+    margin-top: 0px;
+    color: #000000; /* Color for the category title */
+    margin-bottom: 0px;
+}
+
+.project-content p {
+    font-size: 1.0em;
+    margin-bottom: 170px;
+    color: #585858; /* Color for the description text */
+}
+
+.case-study-btn {
+    background-color: #9456f2; /* Button background color */
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    border-radius: 15px; /* Rounded corners for the button */
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.case-study-btn:hover {
+    background-color: #3d5a80; /* Button hover color */
+}
+
+/* Project Image */
+.project-image {
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.project-image img {
+    max-width: 100%;
+    border-radius: 20px; /* Rounded corners for the image */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #project {
+        padding: 40px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .project-container {
+        flex-direction: column-reverse; /* Stack content vertically on smaller screens */
+        align-items: center;
+    }
+
+    .project-container p {
+        margin-bottom: 50px;
+    }
+
+    .project-image {
+        width: 90%;
+    }
+    
+    .project-content {
+        width: 85%; /* Ensure both content and image take full width on smaller screens */
+        text-align: center; /* Center align text for better presentation */
+    }
+
+    .project-content {
+        text-align: justify; /* Justify text for better readability */
+    }
+
+    .project-image {
+        padding: 20px; /* Adjust padding for better spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title h2 {
+        font-size: 1.5em; /* Smaller font size for section title on small screens */
+    }
+
+    .project-content h2 {
+        font-size: 1.5em; /* Smaller font size for project title on small screens */
+    }
+
+    .project-content p {
+        font-size: 1em; /* Smaller font size for project description on small screens */
+    }
+
+    .case-study-btn {
+        padding: 8px 16px; /* Adjust padding for buttons on small screens */
+        font-size: 0.9em; /* Smaller font size for buttons on small screens */
+    }
+}
+
+/* Footer Section */
+.footer {
+    background-color: #000; /* Black background color */
+    padding: 30px 20px;
+    color: white;
+    text-align: center;
+}
+
+.footer-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-holder p{
+    font-size: 25px;
+    font-weight: bold;
+}
+.social-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 8px 0;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    margin: 0 10px; /* Adjusted margin for spacing */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-link img {
+    margin-right: 10px;
+}
+
+.social-link span {
+    font-size: 1.2em;
+}
+
+.social-link:hover span {
+    color: #9A3BFF; /* Purple color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        padding: 10px 10px;
+    }
+
+    .social-link span {
+        font-size: 1em;
+    }
+
+    .social-wrapper {
+        flex-direction:row;
+        align-items: center;
+        margin: 10px;
+    }
+    .social-link img {
+        margin-right: 3px;
+    }
+
+    .social-link {
+        margin: 5px 10px;
+    }
+}

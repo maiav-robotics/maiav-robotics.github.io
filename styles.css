@@ -256,6 +256,10 @@ p {
         width: 90%;
     }
     
+    .content h1{
+        font-size: 50px;
+
+    }
     .project-content {
         width: 85%; /* Ensure both content and image take full width on smaller screens */
         text-align: center; /* Center align text for better presentation */

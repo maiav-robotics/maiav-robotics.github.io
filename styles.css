@@ -190,7 +190,7 @@ p {
 .project-content {
     padding: 30px;
     flex: 1.1;
-    text-align: justify;
+    text-align: none;
     margin-left: 10px;
 }
 
@@ -231,6 +231,9 @@ p {
     align-items: center;
     padding: 20px;
 }
+.project-content p {
+    text-align: justify; /* Justify text for better readability */
+}
 
 .project-image img {
     max-width: 100%;
@@ -265,10 +268,17 @@ p {
         text-align: center; /* Center align text for better presentation */
     }
 
-    .project-content {
-        text-align: justify; /* Justify text for better readability */
+    .project-content h3{
+        text-align: none;
     }
 
+    .project-content {
+        text-align: none; /* Justify text for better readability */
+    }
+
+    .project-content p {
+        text-align: justify; /* Justify text for better readability */
+    }
     .project-image {
         padding: 20px; /* Adjust padding for better spacing */
     }
@@ -283,6 +293,7 @@ p {
         font-size: 1.8em; /* Smaller font size for project title on small screens */
     }
 
+    
     .project-content h3{
         text-align: none;
     }

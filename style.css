@@ -163,6 +163,11 @@ p {
         margin: 30px;
         text-align: justify;
     }
+
+    .description h3{
+        font-size: 30px;
+        margin: 30px;
+    }
 }
 
 @media (max-width: 480px) {

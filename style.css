@@ -187,7 +187,7 @@ p {
 /* Footer Section */
 .footer {
     background-color: #ffffff; /* Black background color */
-    padding: 20px 10px;
+    padding: 30px 20px;
     color: rgb(0, 0, 0);
     text-align: center;
 }
@@ -202,12 +202,13 @@ p {
 .footer-holder p{
     font-size: 25px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: -50px;
+    margin-bottom: -15px;
 }
 .social-wrapper {
     display: flex;
     justify-content: center;
-    margin: 8px 0;
+    margin: 0px 0;
 }
 
 .social-link {

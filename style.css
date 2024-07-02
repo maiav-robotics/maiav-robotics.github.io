@@ -146,8 +146,14 @@ p {
         width: 100%;
         height: auto; /* Adjust the height to auto for responsive design */
     }
+    .container h1{
+        font-size: 35px;
+    }
 
-
+    .tab-list{
+        font-size: 15px;
+        border-radius: 5px;
+    }
     .discord-button {
         padding: 10px 12px;
         font-size: 0.9em;
@@ -169,6 +175,10 @@ p {
         margin: 0 3px;
     }
 
+    .tab-list{
+        font-size: 14px;
+        
+    }
     .video-container {
         width: 80%;
         height: auto; /* Ensure the height adjusts automatically */
@@ -180,9 +190,10 @@ p {
     }
 
     .description p{
-        margin: 30px;
+        margin: 5px;
         text-align: justify;
     }
+
 }
 
 /* Footer Section */
@@ -240,17 +251,20 @@ p {
 /* Responsive Design */
 @media (max-width: 768px) {
     .footer {
-        padding: 10px 10px;
+        padding: 20px 10px;
     }
 
     .social-link span {
         font-size: 1em;
     }
 
+    .footer-holder p{
+        margin-bottom: -30px;
+    }
     .social-wrapper {
         flex-direction:row;
         align-items: center;
-        margin: 10px;
+        margin: 0px;
     }
     .social-link img {
         margin-right: 3px;

@@ -153,7 +153,13 @@ p {
     .tab-list{
         font-size: 15px;
         border-radius: 5px;
+        margin: 10px;
     }
+
+    .tab-item{
+        margin: 20px;
+    }
+
     .discord-button {
         padding: 10px 12px;
         font-size: 0.9em;
@@ -184,6 +190,7 @@ p {
         font-size: 14px;
         
     }
+   
     .video-container {
         width: 80%;
         height: auto; /* Ensure the height adjusts automatically */
@@ -194,6 +201,7 @@ p {
         font-size: 0.8em;
     }
 
+   
     .description p{
         margin: 5px;
         text-align: justify;

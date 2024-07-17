@@ -7,14 +7,7 @@ body {
     color: white;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    /* height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* scroll-snap-type: y proximity; Enable scroll snap
-    text-decoration: none;*/
 }
-
-
 
 header {
     position: absolute;
@@ -59,18 +52,18 @@ nav ul a {
 }
 
 nav ul a:hover {
-    color: #9A3BFF; /* Purple color on hover */
-    /* transform: scale(1.1); Slight zoom effect */
-    text-decoration: none; /* Underline on hover */
+    color: #9A3BFF; 
+    transform: scale(1.2); 
+    text-decoration: none; 
 }
 
 .highlight {
-    color: #9A3BFF; /* Replace with your desired color */
+    color: #9A3BFF; 
 }
 
 /* Spacing between letters */
 .welcome-text {
-    letter-spacing: 0.06em; /* Adjust the space as needed */
+    letter-spacing: 0.06em; 
 }
 
 .margin_bt_mainline {
@@ -92,7 +85,7 @@ nav ul a:hover {
     border-radius: 18px;
     font-weight: bold;
     transition: background-color 0.3s;
-    font-size: 1em; /* Adjusted font size */
+    font-size: 1em; 
 }
 
 .discord-button:hover {
@@ -134,7 +127,7 @@ nav ul a:hover {
 }
 
 h1 {
-    font-size: 5em; /* Adjusted font size */
+    font-size: 5em; 
     margin-bottom: 0;
 }
 
@@ -145,12 +138,12 @@ p {
 
 .section-title {
     text-align: center;
-    margin-bottom: 40px; /* Adjust margin as needed */
+    margin-bottom: 40px; /
 }
 
 .section-title h2 {
-    color: #9A3BFF; /* Purple color */
-    font-size: 2.5em; /* Adjust font size as needed */
+    color: #9A3BFF; 
+    font-size: 2.5em; 
     margin: 0;
 }
 
@@ -196,7 +189,7 @@ p {
     font-size: 2.0em;
     margin-top: 0px;
     color: #000000; /* Color for the category title */
-    margin-bottom: 0px;
+    margin-bottom: 20px;
 }
 
 .project-content p {
@@ -241,7 +234,8 @@ p {
 /* Responsive Design */
 @media (max-width: 768px) {
     #project {
-        padding: 40px 15px; /* Adjust padding for smaller screens */
+        padding: 30px 15px; /* Adjust padding for smaller screens */
+        
     }
 
     .project-container {

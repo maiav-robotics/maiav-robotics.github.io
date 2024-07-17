@@ -359,7 +359,7 @@ p {
 /* Responsive Design */
 @media (max-width: 768px) {
     .footer {
-        padding: 20px 10px;
+        padding: 10px 10px;
     }
 
     .social-link span {
@@ -367,7 +367,7 @@ p {
     }
 
     .footer-holder p{
-        margin-bottom: -30px;
+        margin-bottom: 10px;
     }
 
     .social-wrapper {

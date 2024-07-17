@@ -14,11 +14,14 @@ body {
     text-decoration: none;
 }
 
+
+
+
 header {
     position: absolute;
     top: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
     padding: 10px 0;
     z-index: 1000;
     text-decoration: none;
@@ -356,11 +359,15 @@ p {
 /* Responsive Design */
 @media (max-width: 768px) {
     .footer {
-        padding: 10px 10px;
+        padding: 20px 10px;
     }
 
     .social-link span {
         font-size: 1em;
+    }
+
+    .footer-holder p{
+        margin-bottom: -30px;
     }
 
     .social-wrapper {
